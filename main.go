@@ -8,7 +8,8 @@ import (
 )
 
 func main() {
-	fmt.Println(greets.Hello("sleepynut"))
+	message, _ := greets.Hello("sleepynut")
+	fmt.Println(message)
 
 	message, err := greets.Hello("")
 	if err != nil {
